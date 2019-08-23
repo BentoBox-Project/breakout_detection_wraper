@@ -36,3 +36,16 @@ To show it run the following command:
 Now to run the image you need to run the command:
 ` $ docker run boutdetect `
 
+That's it!
+Now you should get a result like the following:
+
+```
+$loc  
+[1]  31  88 750  
+  
+$time  
+[1] 1.406  
+  
+$pval  
+[1] NA  
+```
