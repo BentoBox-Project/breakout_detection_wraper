@@ -10,10 +10,11 @@ Based on the Docker build and run [Documentation](https://docs.docker.com/get-st
 Build the app
 Make sure you are in the repository top. Here’s what `ls` should show:
 
-`$ ls`
-`Dockerfile                README.md                
-Pipfile                   breakout_detection_wraper
-Pipfile.lock              install_packages.R`
+```$ ls  
+Dockerfile                README.md  
+Pipfile                   breakout_detection_wraper  
+Pipfile.lock              install_packages.R  
+```
 
 Now run the build command. This creates a Docker image, which we’re going to name using the --tag option. Use -t if you want to use the shorter option.
 
