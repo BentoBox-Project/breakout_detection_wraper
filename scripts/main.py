@@ -5,7 +5,7 @@ import os
 
 mydata = []
 
-with open('datos.csv', 'r') as csvfile:
+with open('fuel_data.csv', 'r') as csvfile:
     dat = csv.reader(csvfile)
     for line in dat:
         mydata.append(float(line[0]))
@@ -13,7 +13,7 @@ with open('datos.csv', 'r') as csvfile:
 minsize = 30
 method = 'multi'
 degree = 1
-with open('Codigo.R') as code:
+with open('breakout_function.R') as code:
     rcode = os.linesep.join(code.readlines())
     wrapper = SignatureTranslatedAnonymousPackage(rcode, "Codigo")
 result = wrapper.Detect(FloatVector(mydata), minsize, method, degree)
