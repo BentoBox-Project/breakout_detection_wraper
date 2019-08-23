@@ -10,7 +10,8 @@ Based on the Docker build and run [Documentation](https://docs.docker.com/get-st
 Build the app
 Make sure you are in the repository top. Here’s what `ls` should show:
 
-```$ ls  
+```
+$ ls  
 Dockerfile                README.md  
 Pipfile                   breakout_detection_wraper  
 Pipfile.lock              install_packages.R  
