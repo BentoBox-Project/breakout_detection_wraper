@@ -2,7 +2,8 @@
 Twitter's R breakout detection package wraper for python on a docker.  
 For more information on the Breakout detection package you can check [this article explaining it.](https://blog.twitter.com/engineering/en_us/a/2014/breakout-detection-in-the-wild.html)
 
-Make sure to have installed docker on your environment, if you need more information go to [DOCKER DOCUMENTATION](https://docs.docker.com/get-started/):
+Make sure to have installed docker on your environment, if you need more information go to [DOCKER DOCUMENTATION](https://docs.docker.com/get-started/).  
+This script also uses Pipenv for it's python virtual environment and dependencies, for more information on how to use this go to [the pipenv documentation](https://pipenv-fork.readthedocs.io/en/latest/).
 
 To run this script you need clone this repo and then build and run the docker container as following:
 
