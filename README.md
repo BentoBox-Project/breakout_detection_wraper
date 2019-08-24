@@ -1,5 +1,5 @@
 # breakout_detection_wraper
-Twitter's R breakout detection package wraper for python on a docker
+Twitter's R breakout detection package wraper for python on a docker.  
 For more information on the Breakout detection package you can check [this article explaining it.](https://blog.twitter.com/engineering/en_us/a/2014/breakout-detection-in-the-wild.html)
 
 Make sure to have installed docker on your environment, if you need more information go to [DOCKER DOCUMENTATION](https://docs.docker.com/get-started/):
