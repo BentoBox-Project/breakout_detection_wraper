@@ -21,7 +21,7 @@ def main():
     with open('breakout_detection_wraper/breakout_function.R') as code:
         rcode = os.linesep.join(code.readlines())
         # Create the wrapper as an anonymous package signature
-        wrapper = SignatureTranslatedAnonymousPackage(rcode, "Codigo")
+        wrapper = SignatureTranslatedAnonymousPackage(rcode, "breakout_function")
     # Execute the method from the wrapper
     result = wrapper.Detect(FloatVector(mydata), minsize, method, degree)
     # Print the result returned from the R function
