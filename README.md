@@ -51,3 +51,26 @@ $time
 $pval  
 [1] NA  
 ```
+
+To work with R inside Python I used a Wrapper library called RPY2. It is already installed in this docker container but you can install it with:   
+```pip install rpy2``` 
+
+To "build" the wrapper first you need to read the R script file of the function you are about to use with the following:
+```  
+with open('breakout_detection_wraper/breakout_function.R') as code:  
+        rcode = os.linesep.join(code.readlines())  
+
+```  
+Then you need to put it into the wrapper:  
+```  
+wrapper = SignatureTranslatedAnonymousPackage(rcode, "breakout_function")  
+
+```  
+
+And finally run the function you just wrapped:  
+```  
+result = wrapper.Detect(FloatVector(mydata), minsize, method, degree)  
+
+```  
+
+For more information you can go to the [Rpy2 documentation](https://rpy2.readthedocs.io)  
